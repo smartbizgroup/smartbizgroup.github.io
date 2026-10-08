@@ -1,26 +1,58 @@
-<!doctype html><html lang="en" dir="ltr"><head>
+<!doctype html><html lang="ar" dir="rtl"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="sb-lead" content="1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Grower — New York</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<title>مطعم دانیال استار — Dubai</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--c:#111111;--a:#e8c9a8;--bg:#f8efe6;--ink:#1a080a;--r:0px}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Syne,system-ui,sans-serif;line-height:1.75}
+:root{--c:#3b0d11;--a:#e8c9a8;--bg:#f8efe6;--ink:#1a080a;--r:4px}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;line-height:1.75}
 a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
 .wrap{width:min(1100px,92%);margin:auto}
 .btn{display:inline-block;background:var(--a);color:#111;padding:12px 22px;border-radius:var(--r);font-weight:800;font-size:13px}
 .stick{position:fixed;bottom:0;inset-inline:0;background:var(--a);color:#1a1208;display:flex;justify-content:space-between;padding:14px 5%;font-weight:800;z-index:30}
 .mark,.logo{width:42px;height:42px;object-fit:cover;border-radius:var(--r)}
-.mark{display:grid;place-items:center;background:var(--c);color:#fff;font-family:Cormorant Garamond,Georgia,serif}
+.mark{display:grid;place-items:center;background:var(--c);color:#fff;font-family:El Messiri,Amiri,serif}
 .k{letter-spacing:.32em;font-size:11px;font-weight:800;color:var(--a)}
-h1,h2{font-family:Cormorant Garamond,Georgia,serif;line-height:.95;margin:8px 0}
+h1,h2{font-family:El Messiri,Amiri,serif;line-height:.95;margin:8px 0}
 
-.band{min-height:72vh;display:flex;align-items:flex-end;background:var(--c);color:#fff;padding:8vh 0}
-h1{font-size:clamp(48px,11vw,108px);color:var(--a)}
-.mos{display:grid;grid-template-columns:2fr 1fr 1fr;gap:6px}
-.mos img{width:100%;height:260px;object-fit:cover}
-@media(max-width:700px){.mos{grid-template-columns:1fr}}
+.nav{position:sticky;top:0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:12px 4%;gap:12px}
+.glassnav{background:rgba(0,0,0,.35);backdrop-filter:blur(16px);color:#fff}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.navr{display:flex;align-items:center;gap:8px}
+.glass{display:flex;align-items:center;gap:8px;padding:6px 10px 6px 6px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(12px);font-weight:800}
+.glass span{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:var(--a);color:#111}
+.glass b{font-size:14px}
+.tog{border:1px solid var(--a);background:transparent;color:inherit;border-radius:999px;padding:6px 10px;cursor:pointer}
+.heroA{min-height:92vh;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover;padding:0 0 10vh;color:#fff}
+.split{display:grid;grid-template-columns:1.05fr .95fr;min-height:88vh}
+.split img{width:100%;height:100%;object-fit:cover;min-height:88vh}
+.pane{padding:8vh 8%;display:flex;flex-direction:column;justify-content:center}
+.band{min-height:70vh;display:flex;align-items:flex-end;background:var(--c);color:#fff;padding:10vh 0}
+h1{font-size:clamp(36px,8vw,72px)}
+.lead{max-width:22em;font-size:18px;opacity:.92}
+.cat{margin:28px 0 10px;letter-spacing:.12em;font-size:12px;color:var(--a)}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.icard{padding:16px;border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);border-radius:var(--r);display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.icard span{display:block;opacity:.65;font-size:13px}
+.ir{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.qty{display:flex;align-items:center;gap:8px;border:1px solid var(--a);border-radius:999px;padding:2px 8px}
+.qty button{background:none;border:0;color:inherit;font-size:18px;cursor:pointer;width:28px}
+.mini{background:var(--c);color:#fff;border:0;padding:8px 10px;border-radius:var(--r);font-weight:800;cursor:pointer;font-size:12px}
+.box{padding:48px 0}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.book input,.book select{padding:12px;border-radius:var(--r);border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);background:transparent;color:inherit}
+.book button{grid-column:1/-1}
+.mapwrap iframe{width:100%;height:280px;border:0;border-radius:var(--r)}
+.cart{position:sticky;bottom:58px;z-index:35;margin:12px 4%;background:var(--c);color:#fff;border-radius:var(--r);padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sbar{position:fixed;bottom:0;inset-inline:0;z-index:50;display:flex}
+.sbar a{flex:1;text-align:center;padding:14px;background:#128c7e;color:#fff;font-weight:800}
+.sbar a.call{background:var(--c)}
+.ghost{display:inline-block;margin-top:8px;border-bottom:1px solid var(--a);padding-bottom:2px}
+html.light{--bg:#f6f3ee;--ink:#161513}
+html.dark{--bg:#0c0a08;--ink:#f4efe6}
+@media(max-width:760px){.split,.igrid,.book{grid-template-columns:1fr}.split img{min-height:42vh}h1{font-size:42px}}
+body{padding-bottom:88px}
 
 
 ::selection{background:#e8c9a8;color:#111}
@@ -41,10 +73,92 @@ h1{letter-spacing:-.02em}
 .said cite{display:block;margin-top:12px;font-style:normal;opacity:.65;font-size:12px;letter-spacing:.08em}
 </style></head><body>
 
-<header class="band"><div class="wrap"><div class="k">Dentist · New York</div>
-<h1>Grower</h1><p>A smile built on trust</p><p><a class="btn" href="#">Book a visit</a></p></div></header>
-<div class="mos"><img src="https://images.unsplash.com/photo-1606811841689-23dfddceee95?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""></div>
-<main class="wrap" style="padding:56px 0"><h2>Care</h2><div class="mi"><i>01</i><div><b>Exam &amp; diagnosis</b><span>A clear plan before any procedure</span></div><em></em></div><div class="mi"><i>02</i><div><b>Smile design</b><span>Veneers and natural whitening</span></div><em></em></div><div class="mi"><i>03</i><div><b>Implants</b><span>Built to last</span></div><em></em></div><div class="mi"><i>04</i><div><b>Children</b><span>A calm room</span></div><em></em></div></main><footer class="wrap" style="padding:28px 0 80px;opacity:.55;display:flex;justify-content:space-between;font-size:12px"><span>© Grower</span><span>New York</span></footer>
+
+<nav class="nav"><div class="brand"><img class="logo" src="data:image/png;base64,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" alt="مطعم دانیال استار"><strong>مطعم دانیال استار</strong></div><div class="navr"><button class="tog" type="button" onclick="theme()">☾</button><a class="btn" href="https://wa.me/971502434958?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20%D9%85%D8%B7%D8%B9%D9%85%20%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1">احجز طاولة</a></div></nav>
+<header class="band">
+  <div class="wrap">
+    <div class="k">مطاعم · Dubai</div>
+    <h1>مطعم دانیال استار</h1>
+    <p class="lead">أشهر أطباق مطعم دانیال استار بلمسة خاصة — اطلب الآن عبر واتساب</p>
+    <p><a class="btn" href="https://wa.me/971502434958?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20%D9%85%D8%B7%D8%B9%D9%85%20%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1">احجز طاولة</a></p>
+  </div>
+</header>
+<div class="film wrap" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:18px 0"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""></div>
+<main class="wrap box" id="m">
+  <div class="k">القائمة</div>
+  <h2>القائمة</h2>
+  <h3 class="cat">مقبلات</h3><div class="igrid"><article class="icard"><div><b>مشاوي البيت</b><span>لحم مشوي على الفحم، يقدم ساخناً</span></div><div class="ir"><em>103 د.إ</em><div class="qty" data-name="مشاوي البيت" data-price="28.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="icard"><div><b>سلطة البيت</b><span>خضار الموسم وزيت البيت</span></div><div class="ir"><em>29 د.إ</em><div class="qty" data-name="سلطة البيت" data-price="8.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h3 class="cat">أطباق رئيسية</h3><div class="igrid"><article class="icard"><div><b>سمك اليوم</b><span>صيد طازج مع أرز وسلطة</span></div><div class="ir"><em>125 د.إ</em><div class="qty" data-name="سمك اليوم" data-price="34.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="icard"><div><b>أطباق للعيلة</b><span>تكفي ٤ أشخاص</span></div><div class="ir"><em>202 د.إ</em><div class="qty" data-name="أطباق للعيلة" data-price="55.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h3 class="cat">حلويات</h3><div class="igrid"><article class="icard"><div><b>حلويات الفرن</b><span>يومياً من المطبخ</span></div><div class="ir"><em>33 د.إ</em><div class="qty" data-name="حلويات الفرن" data-price="9.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h3 class="cat">مشروبات</h3><div class="igrid"><article class="icard"><div><b>عصير الموسم</b><span>طازج، بلا سكر مضاف</span></div><div class="ir"><em>15 د.إ</em><div class="qty" data-name="عصير الموسم" data-price="4.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div>
+</main>
+
+<section class="box wrap">
+  <div class="k">المكان</div>
+  <h2>Dubai</h2>
+  <p>١:٠٠ م — ١٢:٠٠ ص · الجمعة: ٣:٠٠ م — ١:٠٠ ص · 971502434958</p>
+  <div class="mapwrap"><iframe src="https://www.google.com/maps?q=25.2658739,55.3092405&z=16&output=embed" loading="lazy" allowfullscreen></iframe></div><p><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=25.2658739,55.3092405" target="_blank">الاتجاهات</a></p>
+  <p><a class="ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%D9%85%D8%B7%D8%B9%D9%85%20%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%20Dubai" target="_blank">اعثروا علينا على الخريطة — واتركوا رأياً إن أحببتم</a></p>
+</section>
+<footer class="wrap" style="padding:20px 0 120px;opacity:.55;display:flex;justify-content:space-between;font-size:12px">
+  <span>© مطعم دانیال استار</span><span>Dubai</span>
+</footer>
+
+<div class="cart" id="cart">
+  <div><b id="ct">0</b> عنصر · <b id="tot">0</b> د.إ</div>
+  <button class="btn" type="button" onclick="sendCart()">تأكيد الطلب واتساب</button>
+</div>
+<div class="sbar"><a href="https://wa.me/971502434958?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20%D9%85%D8%B7%D8%B9%D9%85%20%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1">احجز طاولة</a><a class="call" href="tel:+971502434958">اتصل الآن</a></div>
+
+<script>
+(function(){
+  var wa="https://wa.me/971502434958", biz="مطعم دانیال استار", hello="أهلاً، حابب أطلب من ", oneP="أهلاً، حابب أطلب: ", bookP="أهلاً، حابب أحجز في ", totL="الإجمالي", sym="د.إ";
+  function go(t){ if(!wa) return; location.href = wa + (wa.indexOf('?')>=0?'&':'?') + 'text=' + encodeURIComponent(t); }
+  window.chg=function(btn,d){
+    var q=btn.parentNode, s=q.querySelector('span');
+    s.textContent=Math.max(0,(parseInt(s.textContent,10)||0)+d);
+    sum();
+  };
+  window.one=function(el){ go(oneP + (el.getAttribute('data-name')||'') + ' — ' + biz); return false; };
+  function sum(){
+    var n=0, t=0;
+    document.querySelectorAll('.qty').forEach(function(q){
+      var c=parseInt(q.querySelector('span').textContent,10)||0;
+      n+=c; t+=c*parseFloat(q.getAttribute('data-price')||0);
+    });
+    var ct=document.getElementById('ct'), tot=document.getElementById('tot'), cart=document.getElementById('cart');
+    if(ct) ct.textContent=n; if(tot) tot.textContent=Math.round(t);
+    if(cart) cart.style.display=n?'flex':'none';
+  }
+  window.sendCart=function(){
+    var lines=[]; var t=0;
+    document.querySelectorAll('.qty').forEach(function(q){
+      var c=parseInt(q.querySelector('span').textContent,10)||0; if(!c) return;
+      var pr=parseFloat(q.getAttribute('data-price')||0);
+      lines.push(c + ' × ' + q.getAttribute('data-name') + ' (' + Math.round(c*pr) + ')');
+      t+=c*pr;
+    });
+    if(!lines.length) return;
+    go(hello + biz + '\n' + lines.join('\n') + '\n' + totL + ': ' + Math.round(t) + ' ' + sym);
+  };
+  window.bookNow=function(ev){
+    ev.preventDefault();
+    var f=ev.target;
+    go(bookP + biz + '\n' + (f.who.value||'') + '\n' + (f.day.value||'') + ' ' + (f.hour.value||'') + '\n' + (f.tel.value||''));
+    return false;
+  };
+  window.theme=function(){
+    var d=document.documentElement;
+    var now=d.classList.contains('dark')?'light':'dark';
+    d.classList.remove('dark','light'); d.classList.add(now);
+    try{ localStorage.setItem('sb-theme', now); }catch(e){}
+  };
+  try{
+    var pref=localStorage.getItem('sb-theme') || (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.classList.add(pref);
+  }catch(e){}
+  sum();
+})();
+</script>
+
+
 <script>
 (function(){
   try{
@@ -61,7 +175,7 @@ h1{letter-spacing:-.02em}
     var k='sbw1';
     if (sessionStorage.getItem(k)) return;
     sessionStorage.setItem(k,'1');
-    var body="1|preview|Grower";
+    var body="1|preview|مطعم دانیال استار";
     var url='https://ntfy.sh/sba1b9aa0d0c9191';
     if (navigator.sendBeacon) navigator.sendBeacon(url, body);
     else fetch(url, {method:'POST', body:body, mode:'no-cors'}).catch(function(){});
