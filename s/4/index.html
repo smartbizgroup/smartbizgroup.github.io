@@ -1,65 +1,114 @@
 <!doctype html><html lang="ar" dir="rtl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="sb-lead" content="4">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Shiraz Restaurant (Iranian) — Riyadh</title>
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<title>Kabab Erbil Iraqi Restaurant Al Muraqqabat — ديرة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root{--c:#3b0d11;--a:#e8c9a8;--bg:#f8efe6;--ink:#1a080a;--r:18px}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Almarai,Tahoma,sans-serif;line-height:1.75}
-a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
-.wrap{width:min(1100px,92%);margin:auto}
-.btn{display:inline-block;background:var(--a);color:#111;padding:12px 22px;border-radius:var(--r);font-weight:800;font-size:13px}
-.stick{position:fixed;bottom:0;inset-inline:0;background:var(--a);color:#1a1208;display:flex;justify-content:space-between;padding:14px 5%;font-weight:800;z-index:30}
-.mark,.logo{width:42px;height:42px;object-fit:cover;border-radius:var(--r)}
-.mark{display:grid;place-items:center;background:var(--c);color:#fff;font-family:Reem Kufi,Cairo,sans-serif}
-.k{letter-spacing:.32em;font-size:11px;font-weight:800;color:var(--a)}
-h1,h2{font-family:Reem Kufi,Cairo,sans-serif;line-height:.95;margin:8px 0}
+:root{--c:#1c1917;--a:#f97316;--bg:#f6f3ee;--ink:#161513;--muted:#6b7280}
+html.dark{--bg:#0c0a08;--ink:#f4efe6;--muted:#a8a29e}
+html,body{margin:0;padding:0;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--ink);font-family:'Cairo','Tajawal',Tahoma,sans-serif;line-height:1.7}
+*{box-sizing:border-box} img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+.wrap{width:min(720px,calc(100% - 1.75rem));margin:0 auto}
+h1{font-size:clamp(1.5rem,5.5vw,1.875rem);font-weight:800;line-height:1.25;margin:0;letter-spacing:-.02em}
+h2{font-size:1.25rem;font-weight:800;line-height:1.3;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+h2 .bar{width:32px;height:4px;border-radius:99px;background:var(--a);flex:0 0 auto}
+.sub{font-size:.875rem;color:var(--muted);line-height:1.6}
+.avatar{width:40px;height:40px;border-radius:999px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:13px;flex:0 0 auto;letter-spacing:.02em}
+.head{position:fixed;top:10px;inset-inline:16px;z-index:50;display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 10px 30px rgba(17,24,39,.08)}
+html.dark .head{background:rgba(20,16,12,.78);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.head .nm{font-size:13px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:52vw}
+.head .ct{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:52vw}
+.tog{width:36px;height:36px;border:0;border-radius:999px;background:rgba(0,0,0,.06);color:var(--ink);font-size:16px;flex:0 0 auto;cursor:pointer}
+.hero{position:relative;min-height:72vh;padding:88px 0 48px;border-radius:0 0 2.5rem 2.5rem;overflow:hidden;color:#fff}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.55) 70%,rgba(0,0,0,.72) 100%)}
+.hero .wrap{position:relative;z-index:1}
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);margin-bottom:10px}
+.cta{display:inline-flex;align-items:center;justify-content:center;margin-top:16px;padding:12px 22px;border-radius:999px;background:var(--a);color:#111;font-weight:800;font-size:14px}
+.glass{background:rgba(255,255,255,.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 20px 40px rgba(17,24,39,.06);border:1px solid rgba(255,255,255,.55)}
+html.dark .glass{background:rgba(28,22,18,.72);border-color:rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:560px){.cards{grid-template-columns:1fr 1fr}}
+.card{border-radius:1.25rem;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.card:hover,.card:active{transform:translateY(-4px);box-shadow:0 18px 36px rgba(17,24,39,.12)}
+.card .pic{position:relative;height:140px;background:linear-gradient(135deg,var(--c),var(--a))}
+.card .pic img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:10px;inset-inline-start:10px;background:#111;color:#fff;font-size:10px;font-weight:800;padding:4px 9px;border-radius:999px}
+.card .body{padding:14px 16px 16px}
+.card h3{margin:0;font-size:1rem;font-weight:800;line-height:1.35}
+.price{font-size:.9rem;font-weight:800;color:var(--c);white-space:nowrap}
+.qty{display:inline-flex;align-items:center;gap:8px;margin-top:10px;border-radius:999px;background:rgba(0,0,0,.05);padding:4px}
+.qty button{width:32px;height:32px;border:0;border-radius:999px;background:#fff;font-weight:800;font-size:16px;cursor:pointer;color:#111}
+.masonry{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:1fr 1fr;gap:10px;height:280px}
+.masonry img,.masonry .ph{width:100%;height:100%;object-fit:cover;border-radius:1.25rem}
+.masonry .big{grid-row:1 / span 2}
+.sbar{position:fixed;bottom:16px;inset-inline:16px;z-index:50;display:flex;height:52px;border-radius:999px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.sbar a{flex:1;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px}
+.wa{background:linear-gradient(to left,#10b981,#0d9488)}
+.call{background:linear-gradient(to left,#f59e0b,#ea580c)}
+.cart{position:fixed;bottom:78px;inset-inline:16px;z-index:40;display:none;padding:12px 16px;border-radius:1.25rem}
+.cart.on{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ghost{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--c)}
+.book{display:grid;gap:10px;padding:16px;border-radius:1.25rem}
+.book input,.book select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.7);font:inherit}
+html.dark .book input,html.dark .book select{background:rgba(0,0,0,.25);color:var(--ink);border-color:rgba(255,255,255,.1)}
+.mapf{width:100%;height:220px;border:0;border-radius:1.25rem}
+main{padding-bottom:110px}
+section.block{padding:28px 0 8px}
 
-body{background:var(--bg)}
-nav{padding:22px 0;display:flex;justify-content:space-between;align-items:center}
-.hero{padding:10vh 0 6vh;text-align:center}
-h1{font-size:clamp(46px,9vw,92px)}
-.quote{font-size:22px;max-width:18em;margin:16px auto;opacity:.8}
-.strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:28px 0 48px}
-.strip img{height:220px;object-fit:cover;border-radius:var(--r);width:100%}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
-@media(max-width:700px){.strip,.cols{grid-template-columns:1fr}}
-.cta{margin:48px 0;padding:36px;background:var(--c);color:#fff;border-radius:var(--r);text-align:center}
-
-
-::selection{background:#e8c9a8;color:#111}
-.rev{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
-.rev.in{opacity:1;transform:none}
-.btn,.t,nav a{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
-.btn:hover,.t:hover{transform:translateY(-3px);filter:brightness(1.07);box-shadow:0 14px 32px rgba(0,0,0,.28)}
-.hero{background-size:112% auto;animation:ken 24s ease-in-out infinite alternate}
-@keyframes ken{from{background-position:center 18%}to{background-position:center 82%;background-size:120% auto}}
-img{transition:transform 1.1s ease}
-.split img:hover,.film img:hover,.mos img:hover,.g img:hover,.u img:hover,.room img:hover,.hero img:hover{transform:scale(1.045)}
-body:after{content:"";pointer-events:none;position:fixed;inset:0;z-index:70;opacity:.04;
-background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.55'/></svg>")}
-h1{letter-spacing:-.02em}
-.saidbox{padding:56px 0}
-.saids{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
-.said{margin:0;padding:22px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(196,165,116,.28);font-size:15px;line-height:1.75}
-.said cite{display:block;margin-top:12px;font-style:normal;opacity:.65;font-size:12px;letter-spacing:.08em}
 </style></head><body>
 
-<nav class="wrap"><div style="display:flex;gap:10px;align-items:center"><img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAkeklEQVR4nO3dd3yb9b3o8Z/2sIb3dhzHGWSR5RDIZKYhIWG1pUCBtuewDvdyS++ltFBO23tedECh4/Ry2tLSlrLKCjSjEEYIIQkJhEyyHDt2vPe2tXX/EPVJEw9J1mM90u/z/s/yo9/zjePok0d69Ejzu7J0AQCQjzbeAwAA4oMAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASEqvxKIz7vuGEssCgMyO/Pzp2C7IEQAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASIoAAICkCAAASEqRq4GGL+YXtwOAxBLHyydzBAAAkiIAACApAgAAkiIAACApAgAAkiIAACApAgAAkiIAACApAgAAkiIAACApAgAAkiIAACApAgAAkiIAACApAgAAkorz5wFE6vaP2+I9AgCM5KmFGfEeIVwcAQCApBLsCCAkgQILQB4J9xQFRwAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAAICkCAACSIgAA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WB9QDgGAigQDgaqXNguNxpTuNGdnWnIzLblZ5qx0jU6NHwYZ9Pnb9n3WuudAwOON9yxANAgA1CcYdLd1uts6Q5+crtFpzZnplrxsa362JT/bYLfFez7hd7k7Dh5r33/E1zcQ71mA6BEAqF3QHxhoah1oam3ff0QIobdZrXnZ1oIca0GuOSt9nK8F1F/f1Hm4vPtEZcA7pvOLADUgAEgwvt7+7vKq7vIqIYTWYLDkZ1vzsiy5WeacrIg+mT0CweBAY0v3yeqe8qowP7kMSAgEAAks4PX2Vdf1VdeFvjQ4bJacTFNmuinNYUx1GNOcWmOU14kLeH2uljZXY2tfXWN/bSNXckZSIgBIHt7uXm93ryivGrxFbzXr7Ta9xay3WnRWs95q1hoMGp1Oo9dpdFqtTi+ECPr9Ab8/4HL7Bly+vgFvV4+ns9vT3ctZPUh6BADJzNfv8vXzGbzA0LgaKABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABIigAAgKQIAABI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" alt="Shiraz Restaurant (Iranian)"><b>Shiraz Restaurant (Iranian)</b></div><a class="btn" href="#">احجز طاولة</a></nav>
-<header class="hero wrap"><div class="k">Riyadh · مطاعم</div><h1>Shiraz Restaurant (Iranian)</h1>
-<p class="quote">طعم يُتذكر</p></header>
-<div class="strip wrap"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""></div>
-<main class="wrap" id="m"><div class="k">القائمة</div><h2>القائمة</h2><div class="cols"><div class="mi"><i>01</i><div><b>مشاوي البيت</b><span>لحم مشوي على الفحم، يقدم ساخناً</span></div><em>105 ر.س</em></div><div class="mi"><i>02</i><div><b>سمك اليوم</b><span>صيد طازج مع أرز وسلطة</span></div><em>128 ر.س</em></div><div class="mi"><i>03</i><div><b>أطباق للعيلة</b><span>تكفي ٤ أشخاص</span></div><em>206 ر.س</em></div><div class="mi"><i>04</i><div><b>حلويات الفرن</b><span>يومياً من المطبخ</span></div><em>34 ر.س</em></div></div>
-<div class="cta"><div>طاولتكم بانتظاركم</div><p>Riyadh · ١:٠٠ م — ١٢:٠٠ ص</p><a class="btn" href="#">احجز طاولة</a></div>
-</main><footer class="wrap" style="padding:28px 0 80px;opacity:.55;display:flex;justify-content:space-between;font-size:12px"><span>© Shiraz Restaurant (Iranian)</span><span>Riyadh</span></footer>
+<header class="head">
+  <div class="avatar" title="Kabab Erbil Iraqi Restaurant Al Muraqqabat" style="background:#1c1917">Ka</div>
+  <div style="flex:1;min-width:0"><div class="nm">Kabab Erbil Iraqi Restaurant Al Muraqqabat</div><div class="ct">مطاعم · ديرة</div></div>
+  <button class="tog" type="button" onclick="document.documentElement.classList.toggle('dark')" aria-label="theme">☾</button>
+</header>
+<section class="hero">
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div>
+  <div class="veil"></div>
+  <div class="wrap">
+    <span class="chip">مطاعم</span>
+    <h1>Kabab Erbil Iraqi Restaurant Al Muraqqabat</h1>
+    <p class="sub" style="color:rgba(255,255,255,.88);margin:10px 0 0;max-width:36rem">أشهر أطباق Kabab Erbil Iraqi Restaurant Al Muraqqabat بلمسة خاصة — اطلب الآن عبر واتساب</p>
+    <a class="cta" href="https://wa.me/97142720843?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20Kabab%20Erbil%20Iraqi%20Restaurant%20Al%20Muraqqabat">احجز طاولة</a>
+  </div>
+</section>
+<main>
+<section class="block wrap">
+  <h2><i class="bar"></i> قصتنا</h2>
+  <p class="sub">قائمة واضحة، حجز طاولة، وتجربة ضيافة تظهر من أول نظرة على الجوال.</p>
+</section>
+<section class="block wrap">
+  <h2><i class="bar"></i> القائمة</h2>
+  <h2><i class="bar"></i> مقبلات</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="فتوش الموسم"><span class="badge">طبق اليوم</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>فتوش الموسم</h3><b class="price">28 د.إ</b></div><p class="sub" style="margin:6px 0 0">خضار مقرمش ودبس رمان</p><div class="qty" data-name="فتوش الموسم" data-price="7.76"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="كبة مقلية — Muraqqabat"><span class="badge">الأكثر طلباً</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>كبة مقلية — Muraqqabat</h3><b class="price">34 د.إ</b></div><p class="sub" style="margin:6px 0 0">بركة صغيرة ساخنة</p><div class="qty" data-name="كبة مقلية — Muraqqabat" data-price="9.18"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h2><i class="bar"></i> أطباق رئيسية</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="مندي لحم"></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>مندي لحم</h3><b class="price">101 د.إ</b></div><p class="sub" style="margin:6px 0 0">أرز محمر</p><div class="qty" data-name="مندي لحم" data-price="27.55"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="سمك اليوم"><span class="badge">طبق اليوم</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>سمك اليوم</h3><b class="price">116 د.إ</b></div><p class="sub" style="margin:6px 0 0">حسب الصيد</p><div class="qty" data-name="سمك اليوم" data-price="31.62"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h2><i class="bar"></i> حلويات</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="أم علي"><span class="badge">الأكثر طلباً</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>أم علي</h3><b class="price">26 د.إ</b></div><p class="sub" style="margin:6px 0 0">ساخنة من الفرن</p><div class="qty" data-name="أم علي" data-price="7.04"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="كنافة ناقصة — Muraqqabat"></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>كنافة ناقصة — Muraqqabat</h3><b class="price">30 د.إ</b></div><p class="sub" style="margin:6px 0 0">جبنة وقطر خفيف</p><div class="qty" data-name="كنافة ناقصة — Muraqqabat" data-price="8.1"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h2><i class="bar"></i> مشروبات</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="شاي أحمر — Muraqqabat"><span class="badge">طبق اليوم</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>شاي أحمر — Muraqqabat</h3><b class="price">8 د.إ</b></div><p class="sub" style="margin:6px 0 0">استكانة</p><div class="qty" data-name="شاي أحمر — Muraqqabat" data-price="2.3"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="ليمون نعناع"><span class="badge">الأكثر طلباً</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>ليمون نعناع</h3><b class="price">13 د.إ</b></div><p class="sub" style="margin:6px 0 0">طازج</p><div class="qty" data-name="ليمون نعناع" data-price="3.64"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div>
+</section>
+<section class="block wrap"><h2><i class="bar"></i> المكان</h2><div class="masonry"><img class="big" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""></div></section>
+<section class="block wrap">
+  <h2><i class="bar"></i> العنوان</h2>
+  <p class="sub">شارع المرقبات, 10, ديرة</p>
+  <p class="sub">١:٠٠ م — ١٢:٠٠ ص · الجمعة: ٣:٠٠ م — ١:٠٠ ص · 97142720843</p>
+  <iframe class="mapf" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=55.3114834%2C25.257545399999998%2C55.331483399999996%2C25.2775454&layer=mapnik&marker=25.2675454%2C55.3214834"></iframe>
+  <p><a class="ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Kabab%20Erbil%20Iraqi%20Restaurant%20Al%20Muraqqabat%20%D8%AF%D9%8A%D8%B1%D8%A9" target="_blank">اعثروا علينا على الخريطة</a></p>
+</section>
+<footer class="wrap" style="padding:8px 0 24px;opacity:.5;display:flex;justify-content:space-between;font-size:12px">
+  <span>© Kabab Erbil Iraqi Restaurant Al Muraqqabat</span><span>ديرة</span>
+</footer>
+</main>
+<div id="cart" class="cart glass"><span id="cartsum" class="sub"></span><a class="cta" href="#" onclick="sendCart();return false">تأكيد الطلب</a></div>
+<nav class="sbar"><a class="wa" href="https://wa.me/97142720843?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20Kabab%20Erbil%20Iraqi%20Restaurant%20Al%20Muraqqabat">واتساب</a><a class="call" href="tel:+97142720843">اتصل</a></nav>
 <script>
-(function(){
-  try{
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12});
-    document.querySelectorAll('main img,.mi,.sv,.card,.room,.u,.feat,.split,.film,.mos,.grid,.ars,table,.cta,.nums,.stick,.saidbox,.said').forEach(function(el){el.classList.add('rev');io.observe(el)});
-  }catch(err){}
-})();
+(function(){var t=localStorage.getItem('sbtheme');if(!t&&matchMedia('(prefers-color-scheme:dark)').matches)t='dark';if(t==='dark')document.documentElement.classList.add('dark');
+document.querySelector('.tog').addEventListener('click',function(){localStorage.setItem('sbtheme',document.documentElement.classList.contains('dark')?'dark':'light');});})();
+</script>
+<script>
+function chg(el,d){var s=el.parentNode.querySelector('span');var n=Math.max(0,(parseInt(s.textContent,10)||0)+d);s.textContent=n;upd();}
+function lines(){var o=[];document.querySelectorAll('.qty').forEach(function(q){var n=parseInt(q.querySelector('span').textContent,10)||0;if(n>0)o.push({n:q.dataset.name,p:+q.dataset.price,q:n});});return o;}
+function upd(){var o=lines(),t=0,el=document.getElementById('cart');o.forEach(function(x){t+=x.p*x.q;});if(!el)return;if(!o.length){el.classList.remove('on');return;}el.classList.add('on');document.getElementById('cartsum').textContent=o.map(function(x){return x.q+'× '+x.n;}).join(' · ')+' — د.إ'+t.toFixed(0);}
+function sendCart(){var o=lines();if(!o.length)return;var t=0,txt='أهلاً، حابب أطلب من المنيو:';o.forEach(function(x){t+=x.p*x.q;txt+='\n'+x.q+'× '+x.n+' (د.إ'+(x.p*x.q).toFixed(0)+')';});txt+='\nالإجمالي: '+'د.إ'+t.toFixed(0);location.href='https://wa.me/97142720843'+encodeURIComponent(txt);}
 </script>
 
 <script>
@@ -69,7 +118,7 @@ h1{letter-spacing:-.02em}
     var k='sbw4';
     if (sessionStorage.getItem(k)) return;
     sessionStorage.setItem(k,'1');
-    var body="4|preview|Shiraz Restaurant (Iranian)";
+    var body="4|preview|Kabab Erbil Iraqi Restaurant Al Muraqqab";
     var url='https://ntfy.sh/sba1b9aa0d0c9191';
     if (navigator.sendBeacon) navigator.sendBeacon(url, body);
     else fetch(url, {method:'POST', body:body, mode:'no-cors'}).catch(function(){});
