@@ -1,61 +1,114 @@
 <!doctype html><html lang="ar" dir="rtl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="sb-lead" content="3">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Firdays — Riyadh</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
+<title>بيت المذاق اليمني مطعم — Sharjah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root{--c:#101820;--a:#f2c14e;--bg:#0a0e12;--ink:#f3efe6;--r:18px}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;line-height:1.75}
-a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
-.wrap{width:min(1100px,92%);margin:auto}
-.btn{display:inline-block;background:var(--a);color:#111;padding:12px 22px;border-radius:var(--r);font-weight:800;font-size:13px}
-.stick{position:fixed;bottom:0;inset-inline:0;background:var(--a);color:#1a1208;display:flex;justify-content:space-between;padding:14px 5%;font-weight:800;z-index:30}
-.mark,.logo{width:42px;height:42px;object-fit:cover;border-radius:var(--r)}
-.mark{display:grid;place-items:center;background:var(--c);color:#fff;font-family:El Messiri,Amiri,serif}
-.k{letter-spacing:.32em;font-size:11px;font-weight:800;color:var(--a)}
-h1,h2{font-family:El Messiri,Amiri,serif;line-height:.95;margin:8px 0}
+:root{--c:#3b0d11;--a:#e8c9a8;--bg:#f6f3ee;--ink:#161513;--muted:#6b7280}
+html.dark{--bg:#0c0a08;--ink:#f4efe6;--muted:#a8a29e}
+html,body{margin:0;padding:0;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--ink);font-family:'Cairo','Tajawal',Tahoma,sans-serif;line-height:1.7}
+*{box-sizing:border-box} img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+.wrap{width:min(720px,calc(100% - 1.75rem));margin:0 auto}
+h1{font-size:clamp(1.5rem,5.5vw,1.875rem);font-weight:800;line-height:1.25;margin:0;letter-spacing:-.02em}
+h2{font-size:1.25rem;font-weight:800;line-height:1.3;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+h2 .bar{width:32px;height:4px;border-radius:99px;background:var(--a);flex:0 0 auto}
+.sub{font-size:.875rem;color:var(--muted);line-height:1.6}
+.avatar{width:40px;height:40px;border-radius:999px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:13px;flex:0 0 auto;letter-spacing:.02em}
+.head{position:fixed;top:10px;inset-inline:16px;z-index:50;display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 10px 30px rgba(17,24,39,.08)}
+html.dark .head{background:rgba(20,16,12,.78);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.head .nm{font-size:13px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:52vw}
+.head .ct{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:52vw}
+.tog{width:36px;height:36px;border:0;border-radius:999px;background:rgba(0,0,0,.06);color:var(--ink);font-size:16px;flex:0 0 auto;cursor:pointer}
+.hero{position:relative;min-height:72vh;padding:88px 0 48px;border-radius:0 0 2.5rem 2.5rem;overflow:hidden;color:#fff}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.55) 70%,rgba(0,0,0,.72) 100%)}
+.hero .wrap{position:relative;z-index:1}
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);margin-bottom:10px}
+.cta{display:inline-flex;align-items:center;justify-content:center;margin-top:16px;padding:12px 22px;border-radius:999px;background:var(--a);color:#111;font-weight:800;font-size:14px}
+.glass{background:rgba(255,255,255,.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 20px 40px rgba(17,24,39,.06);border:1px solid rgba(255,255,255,.55)}
+html.dark .glass{background:rgba(28,22,18,.72);border-color:rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:560px){.cards{grid-template-columns:1fr 1fr}}
+.card{border-radius:1.25rem;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.card:hover,.card:active{transform:translateY(-4px);box-shadow:0 18px 36px rgba(17,24,39,.12)}
+.card .pic{position:relative;height:140px;background:linear-gradient(135deg,var(--c),var(--a))}
+.card .pic img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:10px;inset-inline-start:10px;background:#111;color:#fff;font-size:10px;font-weight:800;padding:4px 9px;border-radius:999px}
+.card .body{padding:14px 16px 16px}
+.card h3{margin:0;font-size:1rem;font-weight:800;line-height:1.35}
+.price{font-size:.9rem;font-weight:800;color:var(--c);white-space:nowrap}
+.qty{display:inline-flex;align-items:center;gap:8px;margin-top:10px;border-radius:999px;background:rgba(0,0,0,.05);padding:4px}
+.qty button{width:32px;height:32px;border:0;border-radius:999px;background:#fff;font-weight:800;font-size:16px;cursor:pointer;color:#111}
+.masonry{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:1fr 1fr;gap:10px;height:280px}
+.masonry img,.masonry .ph{width:100%;height:100%;object-fit:cover;border-radius:1.25rem}
+.masonry .big{grid-row:1 / span 2}
+.sbar{position:fixed;bottom:16px;inset-inline:16px;z-index:50;display:flex;height:52px;border-radius:999px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.sbar a{flex:1;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px}
+.wa{background:linear-gradient(to left,#10b981,#0d9488)}
+.call{background:linear-gradient(to left,#f59e0b,#ea580c)}
+.cart{position:fixed;bottom:78px;inset-inline:16px;z-index:40;display:none;padding:12px 16px;border-radius:1.25rem}
+.cart.on{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ghost{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--c)}
+.book{display:grid;gap:10px;padding:16px;border-radius:1.25rem}
+.book input,.book select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.7);font:inherit}
+html.dark .book input,html.dark .book select{background:rgba(0,0,0,.25);color:var(--ink);border-color:rgba(255,255,255,.1)}
+.mapf{width:100%;height:220px;border:0;border-radius:1.25rem}
+main{padding-bottom:110px}
+section.block{padding:28px 0 8px}
 
-nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 4%;background:rgba(0,0,0,.45);backdrop-filter:blur(14px)}
-.hero{min-height:100vh;display:flex;align-items:flex-end;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover;padding:0 0 10vh;color:#fff}
-h1{font-size:clamp(44px,10vw,96px)}
-.film{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px} .film img{height:260px;object-fit:cover;width:100%}
-.stick{position:fixed;bottom:0;inset-inline:0;background:var(--a);color:#1a1208;display:flex;justify-content:space-between;padding:14px 5%;font-weight:800;z-index:30}
-@media(max-width:700px){.film{grid-template-columns:1fr}}
-
-
-::selection{background:#f2c14e;color:#111}
-.rev{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
-.rev.in{opacity:1;transform:none}
-.btn,.t,nav a{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
-.btn:hover,.t:hover{transform:translateY(-3px);filter:brightness(1.07);box-shadow:0 14px 32px rgba(0,0,0,.28)}
-.hero{background-size:112% auto;animation:ken 24s ease-in-out infinite alternate}
-@keyframes ken{from{background-position:center 18%}to{background-position:center 82%;background-size:120% auto}}
-img{transition:transform 1.1s ease}
-.split img:hover,.film img:hover,.mos img:hover,.g img:hover,.u img:hover,.room img:hover,.hero img:hover{transform:scale(1.045)}
-body:after{content:"";pointer-events:none;position:fixed;inset:0;z-index:70;opacity:.04;
-background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.55'/></svg>")}
-h1{letter-spacing:-.02em}
-.saidbox{padding:56px 0}
-.saids{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
-.said{margin:0;padding:22px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(196,165,116,.28);font-size:15px;line-height:1.75}
-.said cite{display:block;margin-top:12px;font-style:normal;opacity:.65;font-size:12px;letter-spacing:.08em}
 </style></head><body>
 
-<nav><div style="display:flex;gap:10px;align-items:center"><img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAVDklEQVR4nO3deZBchX3g8ff6nFtzSEK3EMgSyAKDhQh4CQQfBNtAKONN1sbrEHadZOPalNmU17G3nGzKcSrejezdVOJyIOvNYWyCHYMD2GtwrdcxhBgJsHyIQyDEoWt0azSXuqd7/xBotRIWM0NPvxn9Pp9SqWZev/f6N6qe99XrN92T3npRbwJAPLmsBwAgGwIAEJQAAAQlAABBCQBAUAIAEJQAAAQlAABBCQBAUAIAEJQAAAQlAABBCQBAUAIAEJQAAAQlAABBCQBAUAIAEJQAAAQlAABBCQBAUAIAEJQAAAQlAABBCQBAUAIAEJQAAARVmIqdrrrl5qnYLUBkmz73xcbu0BkAQFACABCUAAAEJQAAQQkAQFACABCUAAAEJQAAQQkAQFACABCUAAAEJQAAQQkAQFBT8m6g49fwN7cDmFkyfPtkZwAAQQkAQFACABCUAAAEJQAAQQkAQFACABCUAAAEJQAAQQkAQFACABCUAAAEJQAAQQkAQFACABBUxr8PYKI+tH5v1iMAnMpta/uyHmG8nAEABDXDzgCOmkGBBeKYcU9ROAMACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgBAAgKAEACEoAAIISAICgClkPADNVWsin+Xwun0vz+Zf/FPK5fC5J0yRN0+P+TtI0zaVJkqZpmuTSJE3SNHfs7+Gde0b3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oAQAICgBAAhKAACCEgCAoAQAICgBAAhKAACCEgCAoAQAICgBAAhKAACCEgCAoAQAICgBAAhKAACCEgCAoAQAICgBAAhKAACCEgCAoAQAICgBAAhKAACCEgCAoAQAICgBYHpL06wngNOWADCtpXkPUZgqvruY1nLF4mQ2c94A4yAATGuFttZJbJXmPLDhtfk+YVor9XRNYqt8a7nhk8DpRwCY1lrm9E5iq2JnR8MngdOPADCttS9ZOImtSl0dudKkLh5AJALAdJWmvResalswd3Lbdp61pNEDwemmkPUA8P9J8/mWuX0dZy6adc7Zpe7OSe9n/jv+RWlW5/4fP1UdGm7geHA6EQCyk6aF1nKhra04q6M0q7PY3dU6t69lbl+az7/+fecKhTlvefOcSy8c3rl78MUdI7v2Du/eWzk48Pr3DKcNAaDZulYsO+OKi/PFYq5cmvI7S9PW+XNb57/8PNLY6JEj+w9WBgYrA4PVgcPVweGxkdGxkdGx0SO1SnVsZLQ+NjblI8G0IQA026xzzip2tGdy1/lyqXXenNZ5c1711oObntn27X9s8kiQIReBabZST3fWI7y69iULsh4BmkoAaLZcaZqed+bbWrIeAZpKAGi2saGRrEd4dfVaLesRoKkEgGY7tHlr1iO8uqEXd2Q9AjTVND0Z5zS255GNex7ZmPUUgDMAgKgEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAoAQAISgAAghIAgKAEACAo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" alt="Firdays"><span>Firdays</span></div>
-<a class="btn" href="#">احجز طاولة</a></nav>
-<header class="hero"><div class="wrap"><div class="k">Riyadh · مطاعم</div>
-<h1>Firdays</h1><p>طعم يُتذكر</p><p><a class="btn" href="#">احجز طاولة</a></p></div></header>
-<div class="film"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""></div>
-<main class="wrap" style="padding:56px 0"><div class="k">القائمة</div><h2>القائمة</h2><div class="mi"><i>01</i><div><b>مشاوي البيت</b><span>لحم مشوي على الفحم، يقدم ساخناً</span></div><em>105 ر.س</em></div><div class="mi"><i>02</i><div><b>سمك اليوم</b><span>صيد طازج مع أرز وسلطة</span></div><em>128 ر.س</em></div><div class="mi"><i>03</i><div><b>أطباق للعيلة</b><span>تكفي ٤ أشخاص</span></div><em>206 ر.س</em></div><div class="mi"><i>04</i><div><b>حلويات الفرن</b><span>يومياً من المطبخ</span></div><em>34 ر.س</em></div>
-<p style="margin-top:24px">Riyadh ·  · ١:٠٠ م — ١٢:٠٠ ص</p></main><footer class="wrap" style="padding:28px 0 80px;opacity:.55;display:flex;justify-content:space-between;font-size:12px"><span>© Firdays</span><span>Riyadh</span></footer>
+<header class="head">
+  <div class="avatar" title="بيت المذاق اليمني مطعم" style="background:#3b0d11">بي</div>
+  <div style="flex:1;min-width:0"><div class="nm">بيت المذاق اليمني مطعم</div><div class="ct">مطاعم · Sharjah</div></div>
+  <button class="tog" type="button" onclick="document.documentElement.classList.toggle('dark')" aria-label="theme">☾</button>
+</header>
+<section class="hero">
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div>
+  <div class="veil"></div>
+  <div class="wrap">
+    <span class="chip">مطاعم</span>
+    <h1>بيت المذاق اليمني مطعم</h1>
+    <p class="sub" style="color:rgba(255,255,255,.88);margin:10px 0 0;max-width:36rem">أشهر أطباق بيت المذاق اليمني مطعم بلمسة خاصة — اطلب الآن عبر واتساب</p>
+    <a class="cta" href="https://wa.me/971561087123?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D8%A7%D9%82%20%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A%20%D9%85%D8%B7%D8%B9%D9%85">احجز طاولة</a>
+  </div>
+</section>
+<main>
+<section class="block wrap">
+  <h2><i class="bar"></i> قصتنا</h2>
+  <p class="sub">قائمة واضحة، حجز طاولة، وتجربة ضيافة تظهر من أول نظرة على الجوال.</p>
+</section>
+<section class="block wrap">
+  <h2><i class="bar"></i> القائمة</h2>
+  <h2><i class="bar"></i> مقبلات</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="حمص البيت"><span class="badge">طبق اليوم</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>حمص البيت</h3><b class="price">22 د.إ</b></div><p class="sub" style="margin:6px 0 0">زيت زيتون وصبّر</p><div class="qty" data-name="حمص البيت" data-price="6.0"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="كبة مقلية — مطعم"><span class="badge">الأكثر طلباً</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>كبة مقلية — مطعم</h3><b class="price">30 د.إ</b></div><p class="sub" style="margin:6px 0 0">بركة صغيرة ساخنة</p><div class="qty" data-name="كبة مقلية — مطعم" data-price="8.28"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h2><i class="bar"></i> أطباق رئيسية</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="ريش غنم"></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>ريش غنم</h3><b class="price">144 د.إ</b></div><p class="sub" style="margin:6px 0 0">تتبيلة البيت</p><div class="qty" data-name="ريش غنم" data-price="39.14"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="مندي لحم"><span class="badge">طبق اليوم</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>مندي لحم</h3><b class="price">112 د.إ</b></div><p class="sub" style="margin:6px 0 0">أرز محمر</p><div class="qty" data-name="مندي لحم" data-price="30.45"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h2><i class="bar"></i> حلويات</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="لقيمات"><span class="badge">الأكثر طلباً</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>لقيمات</h3><b class="price">24 د.إ</b></div><p class="sub" style="margin:6px 0 0">عسل وسمسم</p><div class="qty" data-name="لقيمات" data-price="6.44"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="أم علي"></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>أم علي</h3><b class="price">32 د.إ</b></div><p class="sub" style="margin:6px 0 0">ساخنة من الفرن</p><div class="qty" data-name="أم علي" data-price="8.64"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div><h2><i class="bar"></i> مشروبات</h2><div class="cards"><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="تمر هندي"><span class="badge">طبق اليوم</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>تمر هندي</h3><b class="price">14 د.إ</b></div><p class="sub" style="margin:6px 0 0">بارد</p><div class="qty" data-name="تمر هندي" data-price="3.72"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article><article class="card glass"><div class="pic"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="ليمون نعناع"><span class="badge">الأكثر طلباً</span></div><div class="body"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><h3>ليمون نعناع</h3><b class="price">16 د.إ</b></div><p class="sub" style="margin:6px 0 0">طازج</p><div class="qty" data-name="ليمون نعناع" data-price="4.36"><button type="button" onclick="chg(this,-1)">−</button><span>0</span><button type="button" onclick="chg(this,1)">+</button></div></div></article></div>
+</section>
+<section class="block wrap"><h2><i class="bar"></i> المكان</h2><div class="masonry"><img class="big" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt=""></div></section>
+<section class="block wrap">
+  <h2><i class="bar"></i> العنوان</h2>
+  <p class="sub">شارع الحميدية, Sharjah</p>
+  <p class="sub">١:٠٠ م — ١٢:٠٠ ص · الجمعة: ٣:٠٠ م — ١:٠٠ ص · 971561087123</p>
+  <iframe class="mapf" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=55.512831600000005%2C25.387354799999997%2C55.5328316%2C25.4073548&layer=mapnik&marker=25.3973548%2C55.5228316"></iframe>
+  <p><a class="ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D8%A7%D9%82%20%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A%20%D9%85%D8%B7%D8%B9%D9%85%20Sharjah" target="_blank">اعثروا علينا على الخريطة</a></p>
+</section>
+<footer class="wrap" style="padding:8px 0 24px;opacity:.5;display:flex;justify-content:space-between;font-size:12px">
+  <span>© بيت المذاق اليمني مطعم</span><span>Sharjah</span>
+</footer>
+</main>
+<div id="cart" class="cart glass"><span id="cartsum" class="sub"></span><a class="cta" href="#" onclick="sendCart();return false">تأكيد الطلب</a></div>
+<nav class="sbar"><a class="wa" href="https://wa.me/971561087123?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D9%86%D9%8A%D9%88%20%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D8%A7%D9%82%20%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A%20%D9%85%D8%B7%D8%B9%D9%85">واتساب</a><a class="call" href="tel:+971561087123">اتصل</a></nav>
 <script>
-(function(){
-  try{
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12});
-    document.querySelectorAll('main img,.mi,.sv,.card,.room,.u,.feat,.split,.film,.mos,.grid,.ars,table,.cta,.nums,.stick,.saidbox,.said').forEach(function(el){el.classList.add('rev');io.observe(el)});
-  }catch(err){}
-})();
+(function(){var t=localStorage.getItem('sbtheme');if(!t&&matchMedia('(prefers-color-scheme:dark)').matches)t='dark';if(t==='dark')document.documentElement.classList.add('dark');
+document.querySelector('.tog').addEventListener('click',function(){localStorage.setItem('sbtheme',document.documentElement.classList.contains('dark')?'dark':'light');});})();
+</script>
+<script>
+function chg(el,d){var s=el.parentNode.querySelector('span');var n=Math.max(0,(parseInt(s.textContent,10)||0)+d);s.textContent=n;upd();}
+function lines(){var o=[];document.querySelectorAll('.qty').forEach(function(q){var n=parseInt(q.querySelector('span').textContent,10)||0;if(n>0)o.push({n:q.dataset.name,p:+q.dataset.price,q:n});});return o;}
+function upd(){var o=lines(),t=0,el=document.getElementById('cart');o.forEach(function(x){t+=x.p*x.q;});if(!el)return;if(!o.length){el.classList.remove('on');return;}el.classList.add('on');document.getElementById('cartsum').textContent=o.map(function(x){return x.q+'× '+x.n;}).join(' · ')+' — د.إ'+t.toFixed(0);}
+function sendCart(){var o=lines();if(!o.length)return;var t=0,txt='أهلاً، حابب أطلب من المنيو:';o.forEach(function(x){t+=x.p*x.q;txt+='\n'+x.q+'× '+x.n+' (د.إ'+(x.p*x.q).toFixed(0)+')';});txt+='\nالإجمالي: '+'د.إ'+t.toFixed(0);location.href='https://wa.me/971561087123'+encodeURIComponent(txt);}
 </script>
 
 <script>
@@ -65,7 +118,7 @@ h1{letter-spacing:-.02em}
     var k='sbw3';
     if (sessionStorage.getItem(k)) return;
     sessionStorage.setItem(k,'1');
-    var body="3|preview|Firdays";
+    var body="3|preview|بيت المذاق اليمني مطعم";
     var url='https://ntfy.sh/sba1b9aa0d0c9191';
     if (navigator.sendBeacon) navigator.sendBeacon(url, body);
     else fetch(url, {method:'POST', body:body, mode:'no-cors'}).catch(function(){});
